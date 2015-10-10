@@ -4,7 +4,24 @@ module.exports = function(app) {
 
   parkingRouter.get('/', function(req, res) {
     res.send({
-      'parking': []
+      parking: [
+        { name: "Level 1",
+          places: [
+              {number: 1, isFree: true},
+              {number: 2, isFree: true},
+              {number: 3, isFree: true},
+              {number: 4, isFree: true}
+          ]
+        },
+        { name: "Level 2",
+          places: [
+              {number: 1, isFree: true},
+              {number: 2, isFree: true},
+              {number: 3, isFree: true},
+              {number: 4, isFree: true}
+          ]
+        }
+      ]
     });
   });
 
