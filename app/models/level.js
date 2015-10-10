@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  name: DS.attr('name', { defaultValue: 'Level 1' }),
+  name: DS.attr('string', { defaultValue: 'Level 1' }),
   places: DS.hasMany('parking-place')
 });
