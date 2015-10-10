@@ -8,15 +8,15 @@ module.exports = function(app) {
         'levels': [{
           id: 1,
           name: "Level 1",
-          places: ['11', '12', '13']
+          places: ['0', '2', '3']
         }, {
           id: 2,
           name: "Level 2",
-          places: ['21', '22', '23']
+          places: ['1', '2', '3']
         }, {
           id: 3,
           name: "Level 3",
-          places: ['31', '32', '33']
+          places: ['1', '2', '3']
         }]
       }
     );

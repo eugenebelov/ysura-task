@@ -5,7 +5,7 @@ module.exports = function(app) {
   parkingRouter.get('/', function(req, res) {
     res.send(
       {
-        garage: {
+        'garage': {
           id: 0,
           levels: ['1', '2', '3']
         }
@@ -19,7 +19,7 @@ module.exports = function(app) {
 
   parkingRouter.get('/:id', function(req, res) {
     res.send({
-      'levels': {
+      'garage': {
         id: req.params.id
       }
     });
@@ -27,7 +27,7 @@ module.exports = function(app) {
 
   parkingRouter.put('/:id', function(req, res) {
     res.send({
-      'levels': {
+      'garage': {
         id: req.params.id
       }
     });
